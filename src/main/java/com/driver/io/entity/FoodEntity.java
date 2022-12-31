@@ -1,5 +1,9 @@
 package com.driver.io.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.NoArgsConstructor;
+
 import java.io.Serializable;
 
 import javax.persistence.Column;
@@ -8,6 +12,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity(name = "foods")
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class FoodEntity{
 	@Id
 	@GeneratedValue
@@ -24,6 +31,8 @@ public class FoodEntity{
 	
 	@Column(nullable = false)
 	private String foodCategory;
+
+
 
 	public long getId() {
 		return id;

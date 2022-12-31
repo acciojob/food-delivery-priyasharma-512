@@ -1,6 +1,13 @@
 package com.driver.model.response;
 
 
+import lombok.*;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@Builder
+@NoArgsConstructor
 public class OrderDetailsResponse {
 
 	private String orderId;

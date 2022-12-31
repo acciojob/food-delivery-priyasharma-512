@@ -1,5 +1,12 @@
 package com.driver.model.response;
 
+import lombok.*;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 public class FoodDetailsResponse {
 
 	private String foodId;
